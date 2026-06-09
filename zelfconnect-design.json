@@ -1,0 +1,472 @@
+{
+  "$schema": "https://design-tokens.org/schema.json",
+  "meta": {
+    "name": "ZelfConnect Design System",
+    "version": "1.0.0",
+    "updated": "2025-11-29",
+    "strategy": "Clinical-Human Hybrid",
+    "philosophy": {
+      "summary": "Balans tussen wetenschap (betrouwbaar, strak, data-gedreven) en menselijkheid (kwetsbaar, warm, grounded). Geen 'Tech App' (koud blauw) en geen 'Spirituele Goeroe' (zweverig pastel). Wij zijn 'Grounded Realism'.",
+      "pillars": [
+        {
+          "name": "Clinical",
+          "description": "De wetenschap: betrouwbaar, strak, data-gedreven. Geen ruis."
+        },
+        {
+          "name": "Human", 
+          "description": "De mens: kwetsbaar, warm, grounded. Niet perfect, maar echt."
+        }
+      ]
+    }
+  },
+
+  "color": {
+    "$description": "ZelfConnect gebruikt bewust geen standaard zwart (#000000) of wit (#FFFFFF). Alle kleuren hebben karakter om oogvermoeidheid te voorkomen en sfeer te bouwen.",
+    
+    "primary": {
+      "$description": "De basis - gebruik voor 80% van interface en communicatie",
+      
+      "espresso-ground": {
+        "$type": "color",
+        "$value": "#261920",
+        "$description": "HÃ©t nieuwe zwart. Warm, diep bruin-zwart.",
+        "usage": {
+          "primary": ["bodytekst", "koppen", "lijnen", "iconen"],
+          "ratio": "Dominante tekstkleur in het systeem",
+          "avoid": ["Als achtergrondkleur voor grote vlakken zonder contrast"]
+        },
+        "semantic": "text-primary"
+      },
+      
+      "human-clay": {
+        "$type": "color", 
+        "$value": "#f4cbbd",
+        "$description": "De emotie-drager. Warm, aards roze dat kwetsbaarheid en menselijkheid uitstraalt.",
+        "usage": {
+          "primary": ["achtergrond voor reflectie-vragen", "quotes", "persoonlijke content"],
+          "context": "Gebruik wanneer de gebruiker in 'gevoel-modus' zit",
+          "avoid": ["Voor data/statistieken", "Voor CTA-knoppen"]
+        },
+        "semantic": "surface-emotional"
+      },
+      
+      "clinical-mint": {
+        "$type": "color",
+        "$value": "#dcf2e5", 
+        "$description": "De canvas. Rustige, klinische mintgroen die neutraliteit en helderheid biedt.",
+        "usage": {
+          "primary": ["website achtergrond", "dashboards", "informatieve secties"],
+          "context": "Gebruik voor neutrale, feitelijke content",
+          "avoid": ["Voor emotionele of persoonlijke content"]
+        },
+        "semantic": "surface-neutral"
+      }
+    },
+    
+    "utility": {
+      "$description": "Strategisch gebruik voor sturing en contrast",
+      
+      "dopamine-coral": {
+        "$type": "color",
+        "$value": "#ef5840",
+        "$description": "Actie-trigger. Levendig koraalrood dat energie en beweging activeert.",
+        "usage": {
+          "primary": ["primaire CTA-knoppen", "belangrijkste actie per scherm"],
+          "examples": ["Start", "Volgende", "Meld je aan"],
+          "restriction": "ALLEEN voor primaire knoppen - spaarzaam gebruiken voor maximale impact"
+        },
+        "semantic": "action-primary"
+      },
+      
+      "deep-mind-navy": {
+        "$type": "color",
+        "$value": "#1e2c47",
+        "$description": "Focus & Data. Diep, serieus marineblauw voor concentratie en inzicht.",
+        "usage": {
+          "primary": ["night mode", "zware headers", "grafiek-lijnen", "resultaat-schermen"],
+          "context": "Gebruik wanneer de gebruiker in 'inzicht-modus' zit",
+          "avoid": ["Voor lange leesteksten - te zwaar"]
+        },
+        "semantic": "surface-focus"
+      },
+      
+      "pure-white": {
+        "$type": "color",
+        "$value": "#FFFFFF",
+        "$description": "Contrast-kleur. Alleen voor tekst OP donkere of Coral vlakken.",
+        "usage": {
+          "primary": ["tekst op donkere achtergronden", "tekst op Coral knoppen"],
+          "restriction": "NOOIT als achtergrondkleur gebruiken - gebruik Clinical Mint"
+        },
+        "semantic": "text-on-dark"
+      }
+    }
+  },
+
+  "typography": {
+    "$description": "Combinatie van technische precisie met leesbaarheid. Drie fonts met elk een duidelijke rol.",
+    
+    "font-family": {
+      "headline": {
+        "$type": "fontFamily",
+        "$value": "Open Sauce Two",
+        "$description": "Modern, geometrisch font dat 'tech' voelt maar vriendelijk oogt.",
+        "fallback": ["system-ui", "sans-serif"],
+        "source": "Google Fonts of lokaal hosten"
+      },
+      
+      "body": {
+        "$type": "fontFamily", 
+        "$value": "Montserrat",
+        "$description": "Stabiel, zeer leesbaar font voor alle lange content.",
+        "fallback": ["system-ui", "sans-serif"],
+        "source": "Google Fonts"
+      },
+      
+      "data": {
+        "$type": "fontFamily",
+        "$value": "Space Mono",
+        "$description": "Monospaced 'code' font dat het wetenschappelijke aspect benadrukt.",
+        "fallback": ["monospace"],
+        "source": "Google Fonts"
+      }
+    },
+    
+    "styles": {
+      "headline-xl": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "Open Sauce Two",
+          "fontWeight": 800,
+          "fontSize": "3rem",
+          "lineHeight": 1.1,
+          "letterSpacing": "-0.02em"
+        },
+        "$description": "Hero titels, grote impact statements",
+        "usage": ["homepage hero", "landing page headers"]
+      },
+      
+      "headline-lg": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "Open Sauce Two",
+          "fontWeight": 700,
+          "fontSize": "2rem",
+          "lineHeight": 1.2,
+          "letterSpacing": "-0.02em"
+        },
+        "$description": "Sectie titels, card headers",
+        "usage": ["sectie koppen", "card titels zoals 'Hoe voel je je?'"]
+      },
+      
+      "headline-md": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "Open Sauce Two",
+          "fontWeight": 700,
+          "fontSize": "1.5rem",
+          "lineHeight": 1.3,
+          "letterSpacing": "-0.01em"
+        },
+        "$description": "Sub-sectie titels",
+        "usage": ["subsecties", "feature highlights"]
+      },
+      
+      "body-lg": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "Montserrat",
+          "fontWeight": 400,
+          "fontSize": "1.125rem",
+          "lineHeight": 1.6
+        },
+        "$description": "Primaire leestekst, intro paragrafen",
+        "usage": ["hero subtekst", "belangrijke paragrafen"]
+      },
+      
+      "body-md": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "Montserrat",
+          "fontWeight": 400,
+          "fontSize": "1rem",
+          "lineHeight": 1.5
+        },
+        "$description": "Standaard leestekst",
+        "usage": ["algemene content", "beschrijvingen"]
+      },
+      
+      "body-sm": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "Montserrat",
+          "fontWeight": 400,
+          "fontSize": "0.875rem",
+          "lineHeight": 1.5
+        },
+        "$description": "Secundaire tekst, captions",
+        "usage": ["labels", "helptext", "footer content"]
+      },
+      
+      "ui-button": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "Montserrat",
+          "fontWeight": 600,
+          "fontSize": "1rem",
+          "lineHeight": 1,
+          "textTransform": "none"
+        },
+        "$description": "Knoppen en navigatie",
+        "usage": ["CTA buttons", "menu items"]
+      },
+      
+      "data-display": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "Space Mono",
+          "fontWeight": 400,
+          "fontSize": "1rem",
+          "lineHeight": 1.4
+        },
+        "$description": "Statistieken en numerieke data",
+        "usage": ["scores", "datums", "voortgang ('Stap 1/5')", "percentages"]
+      }
+    }
+  },
+
+  "spacing": {
+    "$description": "Veel witruimte is essentieel voor de 'rust' in het design.",
+    
+    "base": {
+      "$type": "dimension",
+      "$value": "8px",
+      "$description": "Basis spacing unit - alle spacing is een veelvoud hiervan"
+    },
+    
+    "scale": {
+      "xs": { "$type": "dimension", "$value": "4px" },
+      "sm": { "$type": "dimension", "$value": "8px" },
+      "md": { "$type": "dimension", "$value": "16px" },
+      "lg": { "$type": "dimension", "$value": "24px" },
+      "xl": { "$type": "dimension", "$value": "32px" },
+      "2xl": { "$type": "dimension", "$value": "48px" },
+      "3xl": { "$type": "dimension", "$value": "64px" },
+      "4xl": { "$type": "dimension", "$value": "96px" }
+    }
+  },
+
+  "border-radius": {
+    "$description": "Raw, brutalist uitstraling met scherpe hoeken. Uitzondering: knoppen zijn rond.",
+    
+    "none": { "$type": "dimension", "$value": "0px" },
+    "sm": { "$type": "dimension", "$value": "4px", "$description": "Voor cards - minimale radius voor 'raw' uitstraling" },
+    "pill": { "$type": "dimension", "$value": "9999px", "$description": "Voor knoppen - volledig rond, vriendelijk en tactiel" }
+  },
+
+  "shadow": {
+    "$description": "Minimalistisch - geen zachte blur schaduwen. Hard shadow of border voor retro/print effect.",
+    
+    "none": {
+      "$type": "shadow",
+      "$value": "none",
+      "$description": "Default - geen schaduw"
+    },
+    
+    "hard": {
+      "$type": "shadow",
+      "$value": "4px 4px 0px #261920",
+      "$description": "Harde schaduw voor retro/print effect - gebruik spaarzaam"
+    },
+    
+    "border-default": {
+      "$type": "border",
+      "$value": "1px solid #261920",
+      "$description": "Alternatief voor schaduw - dunne lijn in Espresso"
+    }
+  },
+
+  "components": {
+    "$description": "Richtlijnen voor specifieke UI-elementen",
+    
+    "button": {
+      "primary": {
+        "background": "{color.utility.dopamine-coral.$value}",
+        "text": "{color.utility.pure-white.$value}",
+        "border-radius": "{border-radius.pill.$value}",
+        "font": "{typography.styles.ui-button}",
+        "$description": "Primaire actie-knop. Coral met witte tekst, volledig rond.",
+        "states": {
+          "hover": "Iets donkerder coral, cursor pointer",
+          "active": "Nog donkerder, lichte indruk",
+          "disabled": "40% opacity, geen interactie"
+        }
+      },
+      
+      "secondary": {
+        "background": "transparent",
+        "text": "{color.primary.espresso-ground.$value}",
+        "border": "2px solid {color.primary.espresso-ground.$value}",
+        "border-radius": "{border-radius.pill.$value}",
+        "$description": "Secundaire actie. Outline style in Espresso."
+      }
+    },
+    
+    "card": {
+      "background": "{color.utility.pure-white.$value}",
+      "border": "{shadow.border-default.$value}",
+      "border-radius": "{border-radius.sm.$value}",
+      "padding": "{spacing.scale.lg.$value}",
+      "$description": "Content cards met scherpe hoeken (4px), dunne border, geen blur shadow."
+    },
+    
+    "icon": {
+      "style": "line-art",
+      "stroke-width": "1.5px",
+      "color": "{color.primary.espresso-ground.$value}",
+      "$description": "Line-art iconen, dun en strak in Espresso kleur."
+    }
+  },
+
+  "contexts": {
+    "$description": "De achtergrondkleur vertelt de gebruiker in welke 'modus' hij zit.",
+    
+    "neutral": {
+      "surface": "{color.primary.clinical-mint.$value}",
+      "text": "{color.primary.espresso-ground.$value}",
+      "$description": "Feitelijke vragen, informatieve content, dashboards",
+      "use-when": "Gebruiker beantwoordt feitelijke vragen of leest informatie"
+    },
+    
+    "emotional": {
+      "surface": "{color.primary.human-clay.$value}",
+      "text": "{color.primary.espresso-ground.$value}",
+      "$description": "Reflectie-vragen, persoonlijke content, quotes",
+      "use-when": "Gebruiker reflecteert op gevoelens of persoonlijke ervaringen"
+    },
+    
+    "focus": {
+      "surface": "{color.utility.deep-mind-navy.$value}",
+      "text": "{color.utility.pure-white.$value}",
+      "$description": "Resultaten, inzichten, data visualisatie",
+      "use-when": "Gebruiker bekijkt resultaten of belangrijke inzichten"
+    },
+    
+    "hero": {
+      "surface": "{color.primary.espresso-ground.$value}",
+      "text": "{color.primary.clinical-mint.$value}",
+      "alt-text": "{color.utility.pure-white.$value}",
+      "$description": "Hero secties, impactvolle statements",
+      "use-when": "Eerste indruk, homepage hero, belangrijke boodschappen"
+    }
+  },
+
+  "social-media": {
+    "$description": "Templates voor social media content",
+    
+    "truth-bomb": {
+      "background": "{color.primary.human-clay.$value}",
+      "text-color": "{color.primary.espresso-ground.$value}",
+      "font": "{typography.font-family.headline.$value}",
+      "$description": "Quote posts. Volledig vlak, alleen tekst, geen foto's.",
+      "guidelines": ["Max 2-3 zinnen", "Provocerende of herkenbare waarheid", "Geen logo nodig - kleur IS het merk"]
+    },
+    
+    "lifestyle": {
+      "image-style": "Donker, grainy, authentiek",
+      "text-overlay": ["{color.primary.clinical-mint.$value}", "{color.utility.dopamine-coral.$value}"],
+      "$description": "Sfeerbeelden. Rommelig bureau, close-up huid, echte momenten.",
+      "guidelines": ["Geen stockfoto's", "Grain/texture toevoegen", "Tekst als overlay"]
+    },
+    
+    "data-post": {
+      "background": "{color.utility.deep-mind-navy.$value}",
+      "accent": "{color.utility.dopamine-coral.$value}",
+      "text": "{color.utility.pure-white.$value}",
+      "$description": "Statistieken en wetenschap. Grafiek of opvallend cijfer.",
+      "guidelines": ["Ã‰Ã©n key metric centraal", "Bron vermelden", "Coral voor het belangrijkste getal"]
+    }
+  },
+
+  "voice-and-tone": {
+    "$description": "Hoe ZelfConnect communiceert - de 'stem' achter de pixels",
+    
+    "core-voice": {
+      "summary": "Direct, eerlijk, geen bullshit. Warm maar niet soft. Wetenschappelijk onderbouwd maar menselijk gebracht.",
+      "influences": ["Charles Bukowski (rauwe eerlijkheid)", "Naval Ravikant (wijsheid zonder preek)", "Dr. Anne Lembke (wetenschap met compassie)"]
+    },
+    
+    "do": [
+      "Spreek de lezer direct aan ('je', niet 'u')",
+      "Gebruik korte, krachtige zinnen",
+      "Benoem de olifant in de kamer",
+      "Combineer data met menselijke verhalen",
+      "Wees specifiek, niet vaag",
+      "Erken struggle zonder te dramatiseren"
+    ],
+    
+    "dont": [
+      "Geen 'transformatie' of 'reis' taal",
+      "Geen toxic positivity ('Je kan alles!')",
+      "Geen guru-speak of zweverige termen",
+      "Geen corporate jargon",
+      "Niet preken of moraliseren",
+      "Geen beloftes die je niet kan waarmaken"
+    ],
+    
+    "examples": {
+      "good": [
+        "Je dopamine-systeem is kapot. Niet jij.",
+        "80% van je scrollgedrag is onbewust. Tijd om wakker te worden.",
+        "Geluk is geen eindbestemming. Het is een vaardigheid."
+      ],
+      "bad": [
+        "Begin vandaag nog aan je transformatiereis!",
+        "Ontdek je beste zelf met onze holistische aanpak.",
+        "Word de CEO van je eigen leven!"
+      ]
+    }
+  },
+
+  "guidelines": {
+    "layout": {
+      "$description": "Brutalist invloeden: harde lijnen, weinig schaduw, veel witruimte",
+      "principles": [
+        "Generous whitespace - laat content ademen",
+        "Asymmetrische layouts waar gepast",
+        "Geen decoratieve elementen zonder functie",
+        "Grid-based maar niet rigide"
+      ]
+    },
+    
+    "imagery": {
+      "$description": "Authentiek, niet gepolijst",
+      "style": [
+        "Grainy/textured waar mogelijk",
+        "Donkere, moody belichting",
+        "Echte mensen, echte momenten",
+        "Close-ups die intimiteit creÃ«ren"
+      ],
+      "avoid": [
+        "Stock foto's met fake glimlachen",
+        "Over-gesatureerde kleuren",
+        "Perfect gepolijste lifestyle shots",
+        "ClichÃ© wellness imagery (lotus, stenen, etc.)"
+      ]
+    },
+    
+    "accessibility": {
+      "contrast": {
+        "espresso-on-mint": "AAA compliant",
+        "espresso-on-clay": "AA compliant - check specifieke combinaties",
+        "white-on-navy": "AAA compliant",
+        "white-on-coral": "AA compliant"
+      },
+      "notes": [
+        "Test alle kleurcombinaties met WCAG checker",
+        "Zorg voor voldoende font-size (min 16px body)",
+        "Focus states voor keyboard navigatie"
+      ]
+    }
+  }
+}

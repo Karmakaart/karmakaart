@@ -1,0 +1,7 @@
+# Lokale agent-/tooling-config (niet delen)
+.claude/
+.clawd/
+
+# OS / editor rommel
+Thumbs.db
+.DS_Store
