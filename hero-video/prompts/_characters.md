@@ -23,6 +23,11 @@ Dog companion: golden retriever, mid-size, friendly demeanor
 
 Existing reference keyframe: `keyframes/shot2c_jan.png`
 
+## Amir
+> Middle Eastern man, late 30s, short dark hair, neatly trimmed short black beard, warm medium-brown skin, rust-brown crew-neck sweater over a light collared shirt, calm warm expression, painterly flat illustration
+
+Existing reference keyframe: `marketing-activities/card_amir_v1.png` (cast-card, sage-green bg). Added 2026-06-11 as the canonical 5th cast member — motivatie: vluchtelingen/nieuwkomers (taalmaatje, pay-it-forward). No scene keyframe yet; use the card as identity ref.
+
 ## Universal style spine (append to every prompt) — STRENGTHENED 2026-05-14
 
 User flagged Pixar-drift in clips and oversized phones. Push flatness much harder. Reference `fp-1.png` as the visual target — minimal facial detail, color blocking, editorial-illustration quality.

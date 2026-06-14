@@ -16,7 +16,7 @@ C2="$CLIPS/shot2a_marcus_v6.mp4"         # Marcus (10s)
 C3="$CLIPS/shot2b_lisa_v8.mp4"           # Lisa (10s)
 C4="$CLIPS/shot2c_jan_v5.mp4"            # Jan (5s, capped)
 C5="$CLIPS/shot3a_connection_v1.mp4"     # Marcus<->Maya connection (10s)
-C6="$CLIPS/shot3c_aerial_four_v2.mp4"    # aerial of the four (5s)
+C6="$CLIPS/shot3c_aerial_four_v3.mp4"    # aerial of the four (5s) — v3: new Lisa eye/render style
 C7="$CLIPS/shot5_horizon_logo_v2.mp4"    # finale logo (5s)
 
 # generous person-scene windows; trim down later by shrinking D values
