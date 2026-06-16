@@ -28,6 +28,16 @@ Existing reference keyframe: `keyframes/shot2c_jan.png`
 
 Existing reference keyframe: `marketing-activities/card_amir_v1.png` (cast-card, sage-green bg). Added 2026-06-11 as the canonical 5th cast member — motivatie: vluchtelingen/nieuwkomers (taalmaatje, pay-it-forward). No scene keyframe yet; use the card as identity ref.
 
+## Daan  *(B2G gemeente-video — gever, participatie/bijstand; in beeld géén label)*
+> Dutch man, early 30s, short light-brown hair, fair skin, muted slate-blue zip jacket over a grey t-shirt, dark jeans, quiet reserved expression that gradually warms, painterly flat illustration
+
+Identity ref: `gemeente/keyframes/card_daan_v1.png`.
+
+## Henk  *(B2G gemeente-video — ontvanger; de eenzame oud-scheepsbouwer uit de cast-canon)*
+> Elderly Dutch man, around 80, thinning grey hair, weathered lined face, large worn hands, beige cardigan over a checked shirt, calm reserved expression, painterly flat illustration
+
+Identity ref: `gemeente/keyframes/card_henk_v1.png`.
+
 ## Universal style spine (append to every prompt) — STRENGTHENED 2026-05-14
 
 User flagged Pixar-drift in clips and oversized phones. Push flatness much harder. Reference `fp-1.png` as the visual target — minimal facial detail, color blocking, editorial-illustration quality.
