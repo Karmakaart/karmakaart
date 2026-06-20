@@ -13,7 +13,7 @@ geheugen `feedback_higgsfield_karmakaart_recipe`). Prompts in `prompts.md`.
 | `scene3_ouderenbezoek_v1.png` | Ouderenbezoek (koffie) | Maya + Jan | Phase 2 — "Henk"-storytelling |
 | `scene4_voorlezen_v1.png` | Voorlezen | Marcus + kinderen | Phase 2 |
 | `scene5_taalmaatjes_v1.png` | Taalmaatjes (verouderd) | ~~Maya + naamloos figuur~~ | off-canon placeholder, vervangen door scene10 (Amir) |
-| `scene10_taalmaatjes_amir_v1.png` | Taalmaatjes (canon) | Amir + nieuwkomer | Phase 2 — Amir helpt met een brief (2026-06-14) |
+| `scene10_taalmaatjes_amir_v2.png` | Taalmaatjes (canon) | Amir + nieuwkomer | Phase 2 — Amir helpt met een brief. **v2 (2026-06-20): oog-fix** — v1 had kraaloogjes op beide mannen; v2 met `card_marcus` als oogstijl-ref → grote open amandelogen. v1 vervallen. |
 | `scene6_boodschappen_v1.png` | Boodschappen voor de buur | Marcus + Jan | micro-taak |
 | `scene7_honduitlaten_lisa_v1.png` | Hond uitlaten bij asiel | Lisa + hond | micro-taak (canon: dieren = Lisa) |
 | `scene7_honduitlaten_v1.png` | Hond uitlaten (verouderd) | ~~Maya~~ + hond | vervangen door Lisa-versie (canon-fix 2026-06-14) |

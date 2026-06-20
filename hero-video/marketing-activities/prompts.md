@@ -32,11 +32,13 @@ or text anywhere, empty sky.
 4. Voorlezen — Marcus reading a picture book to two small children in a cozy library/community-house reading corner; bookshelves fill the background.
 5. Taalmaatjes — Maya and one new adult character at a café table with notebooks and coffee, mid-conversation; café interior fills background.
 
-## DONE 2026-06-14 — Scene 10: Taalmaatjes (Amir) → `scene10_taalmaatjes_amir_v1.png`
+## DONE 2026-06-14 — Scene 10: Taalmaatjes (Amir) → `scene10_taalmaatjes_amir_v2.png`
 Amir's eigen taalmaatje-scene, hoort bij zijn vignette (helpt een nieuwkomer met een brief).
 **Vervangt de off-canon `scene5_taalmaatjes_v1.png`** (naamloze man van vóór Amir). Ook in site-repo
 gezet als `public/cast/scene_taalmaatjes.png` (de daar gevlagde placeholder is hiermee opgelost).
-Refs in volgorde: `fp-1.png` (stijl) + `card_amir_v1.png` (Amir identiteit).
+**v2 (2026-06-20) — oog-fix:** v1 had kraaloogjes op béíde mannen (gemaakt vóór de eye-fix-techniek).
+v2 met refs `fp-1.png` + `card_amir_v1.png` (identiteit) + **`card_marcus_v1.png` (oog-/gezichtsstijl)**
+en expliciet "large open almond eyes, NOT beady" voor beide → opgelost. v1 vervallen.
 Model `nano_banana_2`, `--aspect_ratio 16:9 --resolution 2k`.
 
 Prompt (verbatim):
