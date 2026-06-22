@@ -29,7 +29,15 @@ KarmaKaart-herkenning via drie dragers samen: (a) dot/marker-stijl in merkkleur 
 
 5 bewegende character-clips totaal (opening + koffie + 3 cascade) + de AE-kaart.
 
+## Rough cut / animatic (ffmpeg) — `gemeente_roughcut_v2.mp4`
+Er is een gemonteerde **rough cut** (~31s, stil): `build_roughcut.sh` zet alles in elkaar.
+Inclusief een werkende **"wijk die oplicht"**: open = grijze wijk waar 6 koel-blauwe dots
+één voor één verschijnen (stille problemen); finale = die dots slaan om naar amber (hulp),
+één voor één, terwijl de kaart inkleurt en de wijk gloeit. Dots zijn ffmpeg-glows op vaste
+coördinaten (zie het script). Dit is de basis/animatic voor de AE-versie en om de VO op te leggen.
+
 ## Nog door jou/editor te doen
-- **AE: het dot-lighting-systeem + de grijs→warm-transitie op de kaart** — dit is het echte AE-werk (de grootste brok).
-- Voice-over inspreken (jouw stem).
+- **AE (optioneel, polish):** de dots verfijnen (pins/pulse i.p.v. glows), Ken Burns op de kaart,
+  fijnere timing. De ffmpeg-animatic dekt het concept al; AE is voor de afwerking.
+- Voice-over inspreken (jouw stem) en onder de animatic leggen.
 - Optioneel: een langere koffie-clip (10s) + een Daan-aankomst/afscheid-beat; 9:16-crop voor mobiel.
