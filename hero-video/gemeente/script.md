@@ -2,7 +2,9 @@
 
 *~45s · 1280×720 (desktop) + 9:16-crop (mobiel) · stijl: KarmaKaart painterly (`fp-1`), voice-over: jouw stem, nuchter Nederlands.*
 
-**Wat er veranderde t.o.v. v3:** diegetische opening (kaart → uitzoomen → telefoon in Daans hand → tik → wegstoppen → lopen), en drie **gelijkwaardige** mini-scènes (eenzaamheid · zorg · vergrijzing) i.p.v. één verhaal + snelle cascade. Elke scène komt zichtbaar **binnen via de kaart** (rode draad: *"… zag het op de kaart"* + pulserende marker). De wijk blijft de held; de slotregel landt op de wíjk.
+**Wat er veranderde t.o.v. v3:** diegetische opening (kaart → uitzoomen → telefoon in Daans hand → tik → wegstoppen → lopen), en drie **gelijkwaardige** mini-scènes (eenzaamheid · zorg · leefbaarheid/zwerfafval) i.p.v. één verhaal + snelle cascade. Elke scène komt zichtbaar **binnen via de kaart** (rode draad: *"… zag het op de kaart"* + pulserende marker). De wijk blijft de held; de slotregel landt op de wíjk.
+
+> **Wijziging 2026-07-22 (scène 3):** tuinieren-scène vervangen door **zwerfafval opruimen in het park** (Marcus met grijper, Jan houdt de vuilniszak open). Reden: de tuin-versies bleven gereedschap-fouten opleveren (mini-hark, éénhandige heggenschaar); prikker + zak zijn simpele, foutloze props én zwerfafval is een KarmaKaart-MVP-activiteit. Marker 3 ligt nu in het park op de kaart.
 
 > **Productienoot:** de kaart-op-telefoon is een **After Effects-composite** (kaartlaag op een blanco telefoon-plate). Higgsfield tekent zelf nooit app-UI (oversized-phone/UI-glitch — zie `feedback_higgsfield_karmakaart_recipe`). Deze route stond al als optie in `design.md §5`.
 
@@ -15,7 +17,7 @@
 | **0 — Opening / KarmaKaart** | 0–8s | Open **strak op de kaart**: painterly wijk-plattegrond met een paar zachte meldingen/pins in merkkleur. Langzaam **uitzoomen** — de kaart blijkt een **telefoonscherm**, in de handen van **Daan**. Hij **tikt één melding aan**, knikt licht, **stopt de telefoon weg** en begint te lopen. | *In elke wijk gebeurt het meeste wat ertoe doet… buiten beeld. Tot je het ziet. KarmaKaart zet het op één kaart — je ziet wat er vandaag, hier, nodig is. Eén tik, en Daan weet genoeg.* |
 | **1 — Eenzaamheid (Daan → Henk)** | 8–19s | Daan loopt de stoep op en klopt op de deur. (`shot2b_daan_arrival`). Binnen: **koffie met Henk**, Henk vertelt, Daan luistert warm (`shot3_daan_henk_koffie`). Daan loopt opgeveerd weg (`shot3b_daan_leaves`). Op de kaart licht **marker 1 warm op** (grijs → goud). | *Henk had al weken niemand gesproken. Eén kop koffie, een ander perspectief... precies de boost die Henk nodig had.* |
 | **2 — Zorg / boodschappen (Maya)** | 19–28s | Korte kaart-beat: tweede grijze marker **pulseert**, **Maya** licht aan als speler. **Maya aan de deur met een tas boodschappen**, korte warme groet met een oudere bewoner. Op de kaart: **marker 2 → warm**. | *Maya zag het ook op de kaart. De boodschappen lukten niet meer. Even langs — geen gedoe.* |
-| **3 — Vergrijzing (Marcus → Jan, tuin)** | 28–37s | Kaart-beat: derde marker (de overwoekerde tuin) pulseert, **Marcus** licht aan. **Marcus helpt Jan (ouder) in de tuin** — samen harken/snoeien, een korte lach. Op de kaart: **marker 3 → warm**. | *En Marcus zag een tuin die te veel werd. Samen was het zo gebeurd.* |
+| **3 — Leefbaarheid / zwerfafval (Marcus & Jan, park)** | 28–37s | Kaart-beat: derde marker (**in het park** — de zwerfafval-melding) pulseert, **Marcus** licht aan. **Marcus en Jan ruimen samen zwerfafval op in het park**: Marcus pakt een blikje met de grijper, Jan houdt de vuilniszak met beide handen open, korte warme knik. Op de kaart: **marker 3 → warm**. | *En Marcus zag het zwerfafval in het park. Samen met Jan was het zo opgeruimd.* |
 | **4 — Finale (de wijk gloeit)** | 37–43s | Helemaal **uittrekken**. De drie warme markers stralen; meer dots **rippelen warm aan** door de hele wijk. Grijs → warm volledig omgeslagen — de wijk **gloeit**, verbonden. | *Geen formulier, geen wachtlijst. Als genoeg mensen iets kleins doen, telt het op — en wat onzichtbaar was, wordt zichtbaar. Niet op papier. In de wijk zelf.* |
 | **5 — Eindkaart** | 43–46s | Het **KarmaKaart-logo** verschijnt op de gloeiende wijk, met de slotregel. | *(stil, of zacht ingesproken)* **KarmaKaart. Eén kaart. De hele wijk in beweging.** |
 
@@ -31,7 +33,7 @@
 >
 > Maya zag het ook op de kaart. De boodschappen lukten niet meer. Even langs — geen gedoe.
 >
-> En Marcus zag een tuin die te veel werd. Samen was het zo gebeurd.
+> En Marcus zag het zwerfafval in het park. Samen met Jan was het zo opgeruimd.
 >
 > Geen formulier, geen wachtlijst. Als genoeg mensen iets kleins doen, telt het op — en wat onzichtbaar was, wordt zichtbaar. Niet op papier. In de wijk zelf.
 
@@ -46,7 +48,7 @@
 
 **Nieuw te genereren (Higgsfield → §4):**
 - Scène 2 — Maya-aan-de-deur-met-boodschappen: `keyframes/shot4_maya_boodschappen_v1.png` + `clips/shot4_maya_boodschappen_anim_v1.mp4`
-- Scène 3 — Marcus-helpt-Jan-in-de-tuin: `keyframes/shot5_marcus_tuin_v1.png` + `clips/shot5_marcus_tuin_anim_v1.mp4`
+- Scène 3 — Marcus-en-Jan-zwerfafval-in-het-park: `keyframes/shot5_zwerfafval_park_v1.png` + `clips/shot5_zwerfafval_park_anim_v1.mp4` *(verving de tuin-versies, zie wijzigingsnoot boven)*
 
 **AE-werk:** de kaart→telefoon-composite (opening), het 3-marker grijs→warm-systeem, en de finale-ripple.
 
@@ -100,7 +102,13 @@ Frame-check op ~2.5s en ~4.5s (geen morph, tas blijft normaal). → **Checkpoint
 
 ---
 
-### Scène 3 — Marcus helpt Jan in de tuin
+### Scène 3 — Marcus & Jan ruimen zwerfafval op in het park *(vervangen 2026-07-22)*
+
+Geproduceerd via de Higgsfield MCP (nano_banana_2 → flash, 2k, 16:9; refs fp-1 + Marcus-card + Jan-card). Kernpunten van de prompt: Marcus houdt **ÉÉN** simpele grijper (normale armlengte, kleine klauw) met een blikje; Jan houdt **ÉÉN** open vuilniszak met **BEIDE handen** (geen tweede gereedschap = geen grip-fouten); 2-3 stukjes zwerfafval op het gras; park vult het hele frame (pad, bankje, herfstbomen); negatieve ruimte linksboven; vlakke matte stijl + oog-fix-clausules; avoid: oversized picker/bag, second grabber, text/logo. Kling 3.0 (5s): blikje in één rustige boog in de zak, Jan knikt, monden vrijwel stil (recept #18), camera statisch, anti-morph.
+
+Bestanden: `keyframes/shot5_zwerfafval_park_v1.png` + `clips/shot5_zwerfafval_park_anim_v1.mp4`.
+
+<details><summary>Oude tuin-versie (vervallen: mini-hark in v1, éénhandige heggenschaar-knip in v2-animatie)</summary>
 
 **Keyframe** (`shot5_marcus_tuin_v1.png`, 16:9, fp-1 + Marcus-card + Jan-card = 3 refs):
 
@@ -125,6 +133,8 @@ higgsfield generate create kling3_0 \
 curl -s -o "$GEM/clips/shot5_marcus_tuin_anim_v1.mp4" "<result-url>"
 ```
 Frame-check op ~2.5s en ~4.5s (geen morph, gereedschap blijft normaal). → **Checkpoint** → commit.
+
+</details>
 
 ---
 
