@@ -10,7 +10,7 @@ set -euo pipefail
 HERE="$(cd "$(dirname "$0")" && pwd)"
 CL="$HERE/clips"; KF="$HERE/keyframes"; MAP="$KF/map_wijk_base_v1.png"
 B="$HERE/_build"; mkdir -p "$B"
-OUT="$HERE/gemeente_roughcut_v4.mp4"
+OUT="$HERE/gemeente_roughcut_v5.mp4"
 FONT="$HERE/_font.ttf"
 W=1280; H=720; FPS=24
 fit="scale=$W:$H:force_original_aspect_ratio=increase,crop=$W:$H,fps=$FPS,format=yuv420p"
@@ -51,9 +51,9 @@ ffmpeg -y -loglevel error -framerate $FPS -loop 1 -t 6.5 -i "$MAP" -framerate $F
 
 echo "== character clips =="
 ffmpeg -y -loglevel error -i "$CL/shot2_daan_phone_anim_v1.mp4"    -vf "trim=0.5:4.5,setpts=PTS-STARTPTS,$fit" -an "$B/s02.mp4"
-ffmpeg -y -loglevel error -i "$CL/shot2b_daan_arrival_anim_v1.mp4" -vf "trim=1.5:4.5,setpts=PTS-STARTPTS,$fit" -an "$B/s03.mp4"
+ffmpeg -y -loglevel error -i "$CL/shot2b_daan_arrival_anim_v2.mp4" -vf "trim=1.5:4.5,setpts=PTS-STARTPTS,$fit" -an "$B/s03.mp4"  # v2: loopcyclus-fix
 ffmpeg -y -loglevel error -i "$CL/shot3_daan_henk_koffie_v2.mp4"   -vf "trim=0:5,setpts=PTS-STARTPTS,$fit"     -an "$B/s04.mp4"
-ffmpeg -y -loglevel error -i "$CL/shot3b_daan_leaves_anim_v1.mp4"  -vf "trim=1:4,setpts=PTS-STARTPTS,$fit"     -an "$B/s05.mp4"
+ffmpeg -y -loglevel error -i "$CL/shot3b_daan_leaves_anim_v2.mp4"  -vf "trim=1:4,setpts=PTS-STARTPTS,$fit"     -an "$B/s05.mp4"  # v2: loopcyclus-fix
 ffmpeg -y -loglevel error -i "$CL/shot4_maya_boodschappen_anim_v1.mp4" -vf "trim=0.2:4.7,setpts=PTS-STARTPTS,$fit" -an "$B/s07.mp4"
 ffmpeg -y -loglevel error -i "$CL/shot5_zwerfafval_park_anim_v1.mp4"   -vf "trim=0.2:4.7,setpts=PTS-STARTPTS,$fit" -an "$B/s09.mp4"
 
